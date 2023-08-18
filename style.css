@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+}
+.tree {
+    background-image: url(./assest/palm.png);
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.char {
+    background-image: url(./assest/char.png);
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+canvas{
+    /* background-image: url(./assest/char.png); */
+    border: 1px solid black;
+    width: 10;
+}
