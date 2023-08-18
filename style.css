@@ -1,12 +1,11 @@
 body{
     height: 100vh;
 }
-.tree {
+.palm {
     background-image: url(./assest/palm.png);
     height: 50vh;
     background-repeat: no-repeat;
-    background-size: contain;
-    
+    background-size: contain;   
 }
 .char {
     background-image: url(./assest/char.png);
@@ -15,8 +14,20 @@ body{
     background-size: contain;
     
 }
-canvas{
-    /* background-image: url(./assest/char.png); */
-    border: 1px solid black;
-    width: 10;
+div.palm{
+    display: flex;
+    justify-content: center ;
+    align-items:center;
 }
+main{
+    background-image: url(assest/bg.png);
+    background-position: bottom;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black;
+}
+#group{
+    padding: 0 10%;
+    width: 100vw;
+}
+
