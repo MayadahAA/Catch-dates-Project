@@ -1,6 +1,8 @@
+const main = document.getElementById('main')
 const palm = document.getElementById("palm");
 const char = document.getElementById("char");
 const showScore = document.getElementById("score");
+
 
 let score = 0;
 let charX = 50;
@@ -11,8 +13,8 @@ function updateCharPosition() {
 function datesFalling() {
     const date = document.createElement('div');
     date.className = 'date';
-    date.style.left = Math.random() * (palm.offsetWidth - 20) + 'px';
-    palm.appendChild(date);
+    date.style.left = Math.random() * (main.offsetWidth - 20) + 'px';
+    main.appendChild(date);
 
     let position = 0;
     const fall = setInterval(() => {
@@ -39,7 +41,7 @@ function datesFalling() {
 }
 
 document.getElementById('leftButton').addEventListener('click', () => {
-    charX += 10;
+    charX -= 10;
     if (charX < 0) {
         charX = 0;
         
@@ -49,8 +51,8 @@ document.getElementById('leftButton').addEventListener('click', () => {
 
 document.getElementById('rightButton').addEventListener('click', () => {
     charX += 10;
-    if (charX < 100) {
-        charX = 100;
+    if (charX < 10) {
+        charX = 10;
     }
     updateCharPosition();
 });
