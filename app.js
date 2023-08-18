@@ -5,7 +5,9 @@ const showScore = document.getElementById("score");
 let score = 0;
 let charX = 50;
 
-
+function updateCharPosition() {
+    char.style.left = charX + '%';
+}
 function datesFalling() {
     const date = document.createElement('div');
     date.className = 'date';
@@ -35,3 +37,12 @@ function datesFalling() {
 
     }, 20);
 }
+
+document.getElementById('leftButton').addEventListener('click', () => {
+    charX += 10;
+    if (charX < 0) {
+        charX = 0;
+        
+    }
+    updateCharPosition();
+})
