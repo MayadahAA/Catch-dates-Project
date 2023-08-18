@@ -45,4 +45,14 @@ document.getElementById('leftButton').addEventListener('click', () => {
         
     }
     updateCharPosition();
-})
+});
+
+document.getElementById('rightButton').addEventListener('click', () => {
+    charX += 10;
+    if (charX < 100) {
+        charX = 100;
+    }
+    updateCharPosition();
+});
+
+setInterval(datesFalling, 2000);
