@@ -12,6 +12,9 @@ body{
     height: 10vh;
     background-repeat: no-repeat;
     background-size: contain;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     
 }
 div.palm{
@@ -19,8 +22,15 @@ div.palm{
     justify-content: center ;
     align-items:center;
 }
+.date{
+    width: 10px;
+    height: 1px;
+    background-image: red;
+    position: absolute;
+    top: 0;
+}
 main{
-    background-image: url(assest/bg.png);
+    /* background-image: url(assest/bg.png); */
     background-position: bottom;
     width: 100vw;
     height: 100vh;
