@@ -32,14 +32,44 @@ function datesFalling() {
             clearInterval(fall)
         }
 
-        if (position >= palm.offsetHeight - 20) {
+        if (position >= main.offsetHeight - 20) {
             date.remove();
             clearInterval(fall)
         }
 
+    }, 3);
+}
+//
+function plantFalling() {
+    const plant = document.createElement('div');
+    plant.className = 'plant';
+    plant.style.left = Math.random() * (main.offsetWidth - 20) + 'px';
+    main.appendChild(plant);
+
+    let position = 0;
+    const fallP = setInterval(() => {
+        position += 2;
+        plant.style.top = position + 'px';
+
+        // 
+        const charS = char.getBoundingClientRect();
+        const plantS = plant.getBoundingClientRect();
+
+        if (charS.left < plantS.right && plantS.right > plantS.left && charS.bottom > plantS.top && charS.top < plantS.bottom) {
+            score -= 5;
+            showScore.innerText = `Score: ${score}`;
+            plant.remove();
+            clearInterval(fallP)
+        }
+
+        if (position >= main.offsetHeight - 20) {
+            plant.remove();
+            clearInterval(fallP)
+        }
+
     }, 20);
 }
-
+//
 document.getElementById('leftButton').addEventListener('click', () => {
     charX -= 10;
     if (charX < 0) {
@@ -58,3 +88,4 @@ document.getElementById('rightButton').addEventListener('click', () => {
 });
 
 setInterval(datesFalling, 2000);
+setInterval(plantFalling, 2000);

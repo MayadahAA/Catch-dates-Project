@@ -31,6 +31,14 @@ div.palm{
     background-repeat: no-repeat;
     top: 10%;
 }
+.plant{
+    width: 100px;
+    height: 100px;
+    background-image: url(assest/plant.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 10%;
+}
 #main{
     /* background-image: url(assest/bg.png); */
     background-position: bottom;
