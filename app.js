@@ -37,7 +37,7 @@ function datesFalling() {
             clearInterval(fall)
         }
 
-    }, 3);
+    }, 20);
 }
 //
 function plantFalling() {
@@ -67,7 +67,11 @@ function plantFalling() {
             clearInterval(fallP)
         }
 
-    }, 20);
+    }, 3);
+}
+if (score < 0) {
+    alert("Game Over");
+    
 }
 //
 document.getElementById('leftButton').addEventListener('click', () => {
@@ -88,4 +92,5 @@ document.getElementById('rightButton').addEventListener('click', () => {
 });
 
 setInterval(datesFalling, 2000);
-setInterval(plantFalling, 2000);
+setInterval(plantFalling, 1500);
+
