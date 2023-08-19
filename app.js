@@ -80,11 +80,12 @@ document.getElementById('leftButton').addEventListener('click', () => {
 
 document.getElementById('rightButton').addEventListener('click', () => {
     charX += 10;
-    if (charX < 0) {
-        charX = 0;
+    if (charX < 100) {
+        charX = 100;
     }
     updateCharPosition();
 });
+
 
 
 setInterval(datesFalling, 2000);
