@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('assest/Arabic\ Pixel\ 2.ttf') format('truetype');
+}
+
 body{
+    font-family: 'pixel';
     /* height: 100%; */
     background-image: url(assest/bg.png);
     background-position: bottom;
@@ -9,12 +15,12 @@ body{
 }
 .palm {
     background-image: url(./assest/palm.png);
-    height: 90vh;
+    height: 80vh;
     background-repeat: no-repeat;
     background-size: contain; 
     bottom: 0;  
     position: relative;
-    width: 10vw;
+    width: 10vw !important;
 }
 .char {
     background-image: url(./assest/char.png);
@@ -26,7 +32,7 @@ body{
     left: 50%;
     bottom: 0;
     border: 1px solid red;
-    width: 20vw;
+    width: 100vw !important;
     
 }
 
@@ -56,3 +62,15 @@ body{
     width: 100vw;
 }
 
+.btnl{
+    background-image: url(assest/btnS.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.btnr{
+    background-image: url(assest/btnS.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
