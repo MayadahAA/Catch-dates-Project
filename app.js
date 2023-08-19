@@ -13,8 +13,8 @@ function updateCharPosition() {
 function datesFalling() {
     const date = document.createElement('div');
     date.className = 'date';
-    date.style.left = Math.random() * (main.offsetWidth - 20) + 'px';
-    main.appendChild(date);
+    date.style.left = Math.random() * (palm.offsetWidth - 20) + 'px';
+    palm.appendChild(date);
 
     let position = 0;
     const fall = setInterval(() => {
@@ -66,12 +66,6 @@ function plantFalling() {
             plant.remove();
             clearInterval(fallP)
         }
-        
-        if (score < -1) {
-            alert("Game Over");
-            score = 0;
-            
-        }
     }, 3);
 }
 //
@@ -91,6 +85,7 @@ document.getElementById('rightButton').addEventListener('click', () => {
     }
     updateCharPosition();
 });
+
 
 setInterval(datesFalling, 2000);
 setInterval(plantFalling, 1500);

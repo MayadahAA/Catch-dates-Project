@@ -14,14 +14,15 @@
   </head>
   <body>
     <div id="main"
-      class="container m-5 row d-flex align-items-baseline align-content-end">
-        <div class="palm col align-items-baseline" id="palm"></div>
-        <div class="char" id="char"></div>
+      class=" row d-flex align-items-baseline align-content-end">
+        <div class="palm col align-items-baseline w-50" id="palm">
+            <div class="char" id="char"></div>
+        </div>
     </div>
     <div class="score" id="score">score: 0</div>
-    <div class="btns">
-        <button id="leftButton" >left</button>
-        <button id="rightButton">right</button>
+    <div class="btn-group">
+        <button id="leftButton"  class="btn btn-danger">left</button>
+        <button id="rightButton" class="btn btn-light">right</button>
     </div>
 
     <script src="app.js"></script>
