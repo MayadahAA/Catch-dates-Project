@@ -66,12 +66,13 @@ function plantFalling() {
             plant.remove();
             clearInterval(fallP)
         }
-
+        
+        if (score < -1) {
+            alert("Game Over");
+            score = 0;
+            
+        }
     }, 3);
-}
-if (score < 0) {
-    alert("Game Over");
-    
 }
 //
 document.getElementById('leftButton').addEventListener('click', () => {
@@ -85,8 +86,8 @@ document.getElementById('leftButton').addEventListener('click', () => {
 
 document.getElementById('rightButton').addEventListener('click', () => {
     charX += 10;
-    if (charX < 10) {
-        charX = 10;
+    if (charX < 0) {
+        charX = 0;
     }
     updateCharPosition();
 });
