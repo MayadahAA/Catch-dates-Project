@@ -32,9 +32,13 @@ function datesFalling() {
             clearInterval(fall)
         }
 
-        if (position >= main.offsetHeight - 20) {
+        if (position >= palm.offsetHeight - 20) {
             date.remove();
             clearInterval(fall)
+        }
+        if (position >= palm.offsetHeight - 20) {
+            position = 0;
+            clearInterval(fall);
         }
 
     }, 20);
@@ -62,7 +66,7 @@ function plantFalling() {
             clearInterval(fallP)
         }
 
-        if (position >= main.offsetHeight - 20) {
+        if (position >= palm.offsetHeight - 10) {
             plant.remove();
             clearInterval(fallP)
         }
@@ -71,8 +75,8 @@ function plantFalling() {
 //
 document.getElementById('leftButton').addEventListener('click', () => {
     charX -= 10;
-    if (charX < 5) {
-        charX = 5;
+    if (charX < 0) {
+        charX = 0;
         
     }
     updateCharPosition();
