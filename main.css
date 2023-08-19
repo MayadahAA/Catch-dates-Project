@@ -1,7 +1,21 @@
+@font-face {
+    font-family: 'pixel';
+    src: url('assest/Arabic\ Pixel\ 2.ttf') format('truetype');
+}
+
+
 body{
+    font-family: 'pixel';
     background-image: url(assest/indexBg.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+}
+.start{
+    background-image: url(assest/btnS.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10em;
 }
