@@ -71,8 +71,8 @@ function plantFalling() {
 //
 document.getElementById('leftButton').addEventListener('click', () => {
     charX -= 10;
-    if (charX < 0) {
-        charX = 0;
+    if (charX < 5) {
+        charX = 5;
         
     }
     updateCharPosition();
@@ -80,8 +80,8 @@ document.getElementById('leftButton').addEventListener('click', () => {
 
 document.getElementById('rightButton').addEventListener('click', () => {
     charX += 10;
-    if (charX < 100) {
-        charX = 100;
+    if (charX > 100) {
+        charX = 99;
     }
     updateCharPosition();
 });
