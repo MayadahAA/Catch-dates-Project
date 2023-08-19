@@ -43,8 +43,8 @@ function datesFalling() {
 function plantFalling() {
     const plant = document.createElement('div');
     plant.className = 'plant';
-    plant.style.left = Math.random() * (main.offsetWidth - 20) + 'px';
-    main.appendChild(plant);
+    plant.style.left = Math.random() * (palm.offsetWidth - 20) + 'px';
+    palm.appendChild(plant);
 
     let position = 0;
     const fallP = setInterval(() => {
