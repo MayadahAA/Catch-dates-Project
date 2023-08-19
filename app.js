@@ -1,7 +1,7 @@
 const main = document.getElementById('main')
 const palm = document.getElementById("palm");
 const char = document.getElementById("char");
-const showScore = document.getElementById("score");
+const showScore = document.getElementById("scoreValue");
 
 
 let score = 0;
@@ -27,7 +27,7 @@ function datesFalling() {
 
         if (charS.left < dateS.right && charS.right > dateS.left && charS.bottom > dateS.top && charS.top < dateS.bottom) {
             score += 10;
-            showScore.innerText = `Score: ${score}`;
+            showScore.textContent = score;
             date.remove();
             clearInterval(fall)
         }
@@ -57,7 +57,7 @@ function plantFalling() {
 
         if (charS.left < plantS.right && plantS.right > plantS.left && charS.bottom > plantS.top && charS.top < plantS.bottom) {
             score -= 5;
-            showScore.innerText = `Score: ${score}`;
+            showScore.textContent = score;
             plant.remove();
             clearInterval(fallP)
         }
