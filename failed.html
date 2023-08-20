@@ -9,23 +9,37 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="main.css" />
     <title>فشلتنا!</title>
+    <style>
+        @font-face {
+    font-family: 'pixel';
+    src: url('assest/Arabic\ Pixel\ 2.ttf') format('truetype');
+}
+        body {
+            font-family: 'pixel';
+        }
+    </style>
   </head>
   <body>
     <div
-      class="d-flex flex-column justify-content-center align-items-center"
-      style="height: 100vh"
+      class="d-flex flex-column justify-content-evenly align-items-center w-100"
+      style="height: 100vh" 
     >
-      <h1>!!ضيعت التمر</h1>
-      <div>
-        <video controls autoplay >
+    <div>
+        <h1>!!ضيعت الرطب</h1>
+
+    </div>
+
+      <div style="width: 100%;">
+        <video controls autoplay style="width: 100%;">
           <source src="assest/FailedVideo.mp4" type="video/mp4" />
         </video>
       </div>
-      <a href="./game.html"
-        ><button class="btn btn-warning">خلاص بنعطيك فرصة ثانية</button></a
-      >
+      <div>
+
+          <a href="./game.html"><button class="btn btn-warning"><b class="fs-3">خلاص بنعطيك فرصة ثانية </b>  </button></a>
+      </div>
+
     </div>
 
     <script
