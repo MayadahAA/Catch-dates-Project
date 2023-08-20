@@ -70,7 +70,7 @@ function plantFalling() {
             plant.remove();
             clearInterval(fallP)
         }
-        if (score < -5){
+        if (score < -10){
             location = "./failed.html";
         }
         if (score === 100) {
