@@ -44,7 +44,7 @@ body{
     left: 50%;
     top: 50vh;
     bottom: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 30%;
     left: clamp(0%, 50%, 100%);
     
