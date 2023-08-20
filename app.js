@@ -70,6 +70,9 @@ function plantFalling() {
             plant.remove();
             clearInterval(fallP)
         }
+        if (score < -5){
+            location = "./failed.html";
+        }
     }, 3);
 }
 //
