@@ -13,9 +13,5 @@ body{
     height: 100vh;
 }
 .start{
-    background-image: url(assest/btnS.png);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: contain;
     height: 10em;
 }
