@@ -16,6 +16,12 @@ body{
     height: 120vh;
 
 }
+@media screen and (max-width: 490) {
+    body{
+        max-width: 400px;
+    }
+    
+}
 .palm {
     /* background-image: url(./assest/palm.png); */
     height: 80vh;
