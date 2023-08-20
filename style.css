@@ -28,24 +28,24 @@ body{
     /* background-repeat: no-repeat; */
     /* background-size: contain; */
     bottom: 0;
-    position: absolute;
+    /* position: absolute; */
     top: 30%;
 }
 .palm img {
     width: 30em;
 }
-.char {
-    background-image: url(./assest/char.png);
-    height: 20%;
-    background-repeat: no-repeat;
-    background-size: contain;
+.char{
+        background-image: url(./assest/char.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    height: 30%;
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
     top: 50vh;
     bottom: 0;
-    /* border: 1px solid red; */
-    width: 25%;
+    border: 1px solid red;
+    width: 30%;
     left: clamp(0%, 50%, 100%);
     
 }
