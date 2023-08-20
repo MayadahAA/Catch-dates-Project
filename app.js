@@ -70,9 +70,9 @@ function plantFalling() {
             plant.remove();
             clearInterval(fallP)
         }
-        // if (score < -10){
-        //     location = "./failed.html";
-        // }
+        if (score < -10){
+            location = "./failed.html";
+        }
         if (score === 100) {
             location="./continue.html"
             
@@ -82,7 +82,7 @@ function plantFalling() {
 //
 document.getElementById('leftButton').addEventListener('click', () => {
     charX -= 10;
-    if (charX < -10) {
+    if (charX < 0) {
         charX = 0;
         
     }
